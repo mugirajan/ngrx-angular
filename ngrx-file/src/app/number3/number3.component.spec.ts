@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CounterComponent } from './counter.component';
+import { Number3Component } from './number3.component';
 
-describe('CounterComponent', () => {
-  let component: CounterComponent;
-  let fixture: ComponentFixture<CounterComponent>;
+describe('Number3Component', () => {
+  let component: Number3Component;
+  let fixture: ComponentFixture<Number3Component>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CounterComponent]
+      declarations: [Number3Component]
     });
-    fixture = TestBed.createComponent(CounterComponent);
+    fixture = TestBed.createComponent(Number3Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

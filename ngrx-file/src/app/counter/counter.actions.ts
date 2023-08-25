@@ -1,5 +1,11 @@
 import { createAction } from '@ngrx/store';
 
-export const increment = createAction('[Counter] Increment');
-export const decrement = createAction('[Counter] Decrement');
-export const reset = createAction('[Counter] Reset');
+export const increment1 = createAction('[Counter] Increment');
+
+export const increment2 = createAction('[Counter] Increment Count1');
+
+export const increment3 = createAction('[Counter] Increment Count2');
+
+export const increment4 = createAction('[Counter] Increment Count3');
+
+export const increment5 = createAction('[Counter] Increment Count4');
