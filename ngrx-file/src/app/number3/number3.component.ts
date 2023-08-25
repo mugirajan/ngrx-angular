@@ -8,22 +8,21 @@ import { CounterState } from '../counter/counter.state';
   template: `
     <h2>Number 3 Component</h2>
     <button (click)="handleIncrementClick()">Increment</button>
-    <p>Count: {{ count }}</p><hr>
+    <p>Count: {{ count2 }}</p><hr>
   `,
 })
 export class Number3Component implements OnInit {
-  count: number = 0;
+  count2: number = 0;
 
-  constructor(private store: Store<{ counter: { count: number } }>) {}
+  constructor(private store: Store<{ counter: { count2: number } }>) {}
 
   ngOnInit() {
-    this.store.select(state => state.counter.count).subscribe(count => {
-      this.count = count;
+    this.store.select(state => state.counter.count2).subscribe(count => {
+      this.count2= count;
     });
   }
 
   handleIncrementClick() {
-    console.log('Increment button clicked');
     this.store.dispatch(increment3());
   }
 }

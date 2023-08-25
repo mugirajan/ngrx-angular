@@ -23,7 +23,6 @@ export class Number5Component implements OnInit {
   }
 
   handleIncrementClick() {
-    console.log('Increment button clicked');
     this.store.dispatch(increment5());
   }
 }
